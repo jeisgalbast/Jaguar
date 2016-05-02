@@ -15,16 +15,18 @@ article {
 	color: white;
 	margin: 30px;
 	max-width: 600px;
-    padding: 25px;
+        padding: 25px;
 }
 
 article h1 {
 	margin: 0 0 20px 0;
+	transition: font-size ease 1s;
 }
 
 article p {
 	font-size: 14px;
 	line-height: 1.8;
+	transition: font-size ease 1s;
 }
 
 article a {
@@ -39,4 +41,22 @@ article a {
 	text-decoration: none;
 	text-align: center;
 	width: 120px;
+	transition: font-size ease 1s, width ease 1s;
 }
+
+@media (max-width: 600px) {
+
+	article h1 {
+		font-size: 25px;
+	}
+
+	article p {
+		font-size: 12px;
+	}
+
+	article a {
+		font-size: 12px;
+		width: 100px;
+	}
+}
+
